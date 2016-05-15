@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>竞赛专区</title>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <link href="css/css.css" rel="stylesheet"/>
+    <script src="js/prefixfree.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css"/>
+    <script>
+        $().ready(function(){
+            $(window).load(function () {
+                $(".content").mCustomScrollbar();
+            });
+        })
+
+        function foreachArray(array){
+
+        }
+
+        function keywordsSearch() {//贺卡搜索
+            var $keywords = $("#search_insert").val();
+            if ($keywords == "") {
+                alert('搜索信息不能为空');
+            } else {
+                location.href = "http://www.cpostcard.com/search/diy?keywords=" + $keywords;
+            }
+        }
+        $().ready(function(){
+            $("#exchange").mouseenter(function () {//导航栏里的兑换
+                $("#pullDown").css("display", "block");
+            })
+            $("#exchange").mouseleave(function () {
+                $("#pullDown").css("display", "none");
+            })
+        })
+    </script>
+    <style>
+        #banner3 .centerImg1{
+            border:none;
+            position: absolute;z-index: 1;bottom: 10px;left: 13px;cursor: pointer;transition:transform 0.5s;
+        }
+        #banner3 .centerImg1:hover{
+            transform:scale(1.13,1.06);
+        }
+        #banner3 .centerImg2{
+            border:none;
+            position: absolute;z-index: 1;bottom: 10px;left: 13px;cursor: pointer;
+            transition:transform 0.5s;
+        }
+
+        #banner3 .centerImg2:hover{
+            transform:scale(1.06,1.06);
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <div class="top">
+        <div class="logo">
+            <a href="http://www.cpostcard.com/"><img src="http://www.cpostcard.com/images/web1.png" class="one"
+                                                     width="89px"></a>
+            <img src="http://www.cpostcard.com/images/china-post_06.png" class="two">
+        </div>
+        <ul class="login">
+            <li><a href="http://www.cpostcard.com/login">登录</a></li>
+            <span>|</span>
+            <li><a href="http://www.cpostcard.com/register">免费注册</a></li>
+            <span>|</span>
+            <li><a href="http://www.cpostcard.com/profile/myorder">我的订单</a></li>
+            <span>|</span>
+            <li><a href="http://www.cpostcard.com/help">帮助</a></li>
+        </ul>
+    </div>
+    <div style=" background-color: #f86664;">
+        <div class="center">
+            <ul class="nav_button">
+                <li style="width: 173px;"><a href="http://www.cpostcard.com/" style="width:auto">首页</a></li>
+                <li style="width: 183px;"><a href="http://www.cpostcard.com/goods?id=69" style="width:auto">DIY明信片</a></li>
+                <li id="exchange" style="width: 183px; position:relative;"><a style="width:auto">电子券兑换</a>
+                    <ul id="pullDown" style="display: none;" class="nav_button">
+                        <li style="width: 225px;position: absolute;"><a target="_blank" href="http://piao.cpostcard.com/" style="width:auto">电影票兑换</a>
+                        </li>
+                        <li style="width: 225px;position: absolute;left: 0px;
+top: 100px;"><a target="_blank" href="flowExchange.html" style="width:auto">流量兑换</a></li>
+                    </ul>
+                </li>
+                <li style="width: 194px;"><a target="_blank" href="http://trip.cpostcard.com/">明信片大抽奖</a></li>
+                <li  style="width: 173px;position: relative;">
+                    <img style="position: absolute;top:-24px;" src="images/recommond.png"/>
+                    <a target="_blank" href="#" style="background-color: #fd2525;">竞赛专区</a>
+                </li>
+            </ul>
+            <div class="select">
+                <form onsubmit="return false">
+                    <input value="母亲节" id="search_insert" class="select_text" type="text">
+                    <input onclick="keywordsSearch()" value="" id="sub_search" class="select_button" type="submit">
+                    <input name="__hash__" value="ed43592a43d3ec5ef4c3b4c2c07741b4" type="hidden"></form>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<div id="main">
+    <div id="banner1">
+        <img style="float:left;" src="images/banner1.png"/>
+        <div class="top10">
+            <img class="top10Img" src="images/top10.png"/>
+            <table class="mCustomScrollbar" data-mcs-theme="light-2">
+                <tbody>
+                    <tr>
+                        <th>排名</th>
+                        <th>省份</th>
+                        <th>制作量</th>
+                    </tr>
+                    <tr>
+                        <td><img src="images/1.png"/></td>
+                        <td>北京市</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/2.png"/></td>
+                        <td>上海市</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/3.png"/></td>
+                        <td>广东市</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>浙江省</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>福建省</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>湖北省</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>河北省</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>四川省</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>河南省</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>湖南省</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>河北省</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>四川省</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>河南省</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>湖南省</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>湖南省</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>河北省</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>四川省</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>河南省</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>湖南省</td>
+                        <td>30000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--<a href="#all" style="font-size: 12px;margin-left: -15px;">查看全部</a>-->
+        </div>
+    </div>
+    <div id="banner2">
+        <img src="images/banner2.png"/>
+    </div>
+   <!-- <div style="color: #7C2710;line-height: 20px;font-size: 12px;text-indent: 50px;">
+        <p>温馨提示：如果明信片无法显示，请尝试清除缓存刷新页面再试。 清除缓存方法：360浏览器：工具&ndash;&gt;清除上网痕迹。 IE浏览器：设置&ndash;&gt;Internet选项&ndash;&gt;常规选项卡中点击删除 其他浏览器清除方法大致相同</p>
+    </div>-->
+    <div id="banner3">
+        <img style="float:left;" src="images/banner3.png"/>
+        <div class="opBoDiv1">
+            <img class="downImg" src="images/6.png"/>
+            <img class="leftImg" src="images/left.png"/>
+            <img class="rightImg" src="images/right.png"/>
+            <a href="#"><img class="centerImg1" src="images/banner4.png"/></a>
+        </div>
+        <div class="opBoDiv2">
+            <img class="downImg" src="images/7.png"/>
+            <img class="leftImg" src="images/left.png"/>
+            <img class="rightImg" src="images/right.png"/>
+            <a href="#"><img class="centerImg2" src="images/banner5.png"/></a>
+        </div>
+    </div>
+
+    <div id="tips">
+        <img style="display: block;" src="images/tips1.png"/>
+        <div id="content">
+            <table class="table" style="float:left;">
+                <tr>
+                    <th width="50%">专属号码</th>
+                    <th width="20%">省份</th>
+                    <th width="30">姓名</th>
+                </tr>
+                <tr>
+                    <td>1234567890123456789</td>
+                    <td>北京市</td>
+                    <td>莫有雪</td>
+                </tr>
+                <tr>
+                    <td>1234567890123456789</td>
+                    <td>北京市</td>
+                    <td>莫有雪</td>
+                </tr>
+                <tr>
+                    <td>1234567890123456789</td>
+                    <td>北京市</td>
+                    <td>莫有雪</td>
+                </tr>
+                <tr>
+                    <td>1234567890123456789</td>
+                    <td>北京市</td>
+                    <td>莫有雪</td>
+                </tr>
+                <tr>
+                    <td>1234567890123456789</td>
+                    <td>北京市</td>
+                    <td>莫有雪</td>
+                </tr>
+                <tr>
+                    <td>1234567890123456789</td>
+                    <td>北京市</td>
+                    <td>莫有雪</td>
+                </tr>
+                <tr>
+                    <td>1234567890123456789</td>
+                    <td>北京市</td>
+                    <td>莫有雪</td>
+                </tr>
+                <tr>
+                    <td>1234567890123456789</td>
+                    <td>北京市</td>
+                    <td>莫有雪</td>
+                </tr>
+                <tr>
+                    <td>1234567890123456789</td>
+                    <td>北京市</td>
+                    <td>莫有雪</td>
+                </tr>
+                <tr>
+                    <td>1234567890123456789</td>
+                    <td>北京市</td>
+                    <td>莫有雪</td>
+                </tr>
+            </table>
+            <table class="table" style="float:right;">
+                <tr>
+                    <th width="50%">专属号码</th>
+                    <th width="20%">省份</th>
+                    <th width="30%">姓名</th>
+                </tr>
+                <tr>
+                    <td>1234567890123456789</td>
+                    <td>北京市</td>
+                    <td>莫有雪</td>
+                </tr>
+                <tr>
+                    <td>1234567890123456789</td>
+                    <td>北京市</td>
+                    <td>莫有雪</td>
+                </tr>
+                <tr>
+                    <td>1234567890123456789</td>
+                    <td>北京市</td>
+                    <td>莫有雪</td>
+                </tr>
+                <tr>
+                    <td>1234567890123456789</td>
+                    <td>北京市</td>
+                    <td>莫有雪</td>
+                </tr>
+                <tr>
+                    <td>1234567890123456789</td>
+                    <td>北京市</td>
+                    <td>莫有雪</td>
+                </tr>
+                <tr>
+                    <td>1234567890123456789</td>
+                    <td>北京市</td>
+                    <td>莫有雪</td>
+                </tr>
+                <tr>
+                    <td>1234567890123456789</td>
+                    <td>北京市</td>
+                    <td>莫有雪</td>
+                </tr>
+                <tr>
+                    <td>1234567890123456789</td>
+                    <td>北京市</td>
+                    <td>莫有雪</td>
+                </tr>
+                <tr>
+                    <td>1234567890123456789</td>
+                    <td>北京市</td>
+                    <td>莫有雪</td>
+                </tr>
+                <tr>
+                    <td>1234567890123456789</td>
+                    <td>北京市</td>
+                    <td>莫有雪</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<div class="notice">
+    <div class="about">
+        <div class="clear"></div>
+        <p>© 2005-2015 北京中鸿博雅印务科技有限公司 版权所有，并保留所有权利。</p>
+
+        <p> 地址：北京市大兴区中关村科技园区大兴生物医药基地永大路27号 电话：61251803</p>
+
+        <p>北京华录新媒信息技术有限公司技术支持<a style="padding-left:10px" target="_blank" href="http://www.miibeian.gov.cn">京ICP备14028827号</a>
+        </p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,287 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+ul{
+    list-style: none;
+}
+.nav {
+    width: 1250px;
+    height: 134px;
+    background-color: #FFF;
+    top: 0px;
+    z-index: 10000;
+    margin:0 auto;
+}
+.nav .top {
+    width: 1250px;
+    height: 84px;
+    background-color: #FFF;
+    margin: 0px auto;
+}
+.nav .logo {
+    height: 84px;
+    float: left;
+}
+.nav .logo .one {
+    padding: 6px 0px 6px 32px;
+    float: left;
+    vertical-align: middle;
+    height: 72px;
+}
+.nav .logo .two {
+    padding: 20px 0px 20px 14px;
+    float: left;
+    vertical-align: middle;
+    height: 44px;
+}
+.nav .login {
+    height: 40px;
+    margin-right: 32px;
+    float: right;
+    margin-top: 34px;
+}
+.nav .login li {
+    float: left;
+    display: inline;
+}
+.nav .login span {
+    float: left;
+    display: block;
+    width: 3px;
+    line-height: 40px;
+    color: #999;
+    font-size: 14px;
+    font-family: '宋体';
+}
+.nav .login a {
+    font-size: 14px;
+    margin: 0px 8px 0px 13px;
+    width: auto;
+    color: #999;
+    line-height: 40px;
+    float: left;
+    display: inline;
+}
+.center {
+    width: 1250px;
+    margin: 0px auto;
+    position: relative;
+}
+.nav .nav_button {
+    width: 916px;
+    float: left;
+}
+.nav .nav_button li {
+    float: left;
+    width: 182px;
+    height: 50px;
+    margin-right: 1px;
+    position: relative;
+}
+.nav .nav_button a {
+    display: block;
+    line-height: 50px;
+    width: 180px;
+    background-color: #F86565;
+    text-align: center;
+    font-family: '微软雅黑';
+    font-size: 20px;
+    color: #F9EBEB;
+}
+.nav .select {
+    width: 281px;
+    background-color: #F86565;
+    height: 30px;
+    float: left;
+    padding: 10px 26px;
+    display: inline;
+}
+.clear {
+    clear: both;
+}
+.nav .select form {
+    width: 276px;
+    /* height: 29px;*/
+    float: left;
+    background-color: #FFF;
+}
+.nav .select .select_text {
+    height: 29px;
+    width: 236px;
+    float: left;
+    border: 0px none;
+    line-height: 29px;
+    color: #999;
+    padding-left: 12px;
+}
+.nav .select .select_button {
+    width: 20px;
+    height: 29px;
+    border: medium none;
+    background: #FFF url("../images/button.png") no-repeat scroll 0px 3px;
+    cursor: pointer;
+}
+
+.notice {
+    width: 1248px;
+    /* border: 1px solid #ccc;*/
+    margin: 0 auto;
+    background-color: #fff;
+    /*  border-left: 1px solid #999;*/
+}
+
+.about {
+    background-color: #cdcccc;
+    color: #7c2710;
+    height: 70px;
+    margin: 0 auto;
+    padding-top: 35px;
+    width: 1250px;
+}
+
+.about p {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.about a {
+    color: #7c2710
+}
+
+.gray {
+    background-color: gray;
+}
+
+a:link {
+    /*color: white;*/
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+#main{
+    width:1250px;height: 1400px;
+    margin:0 auto;margin-top:5px;
+}
+#banner1{
+    width:1250px;height:380px;
+}
+
+#banner1 img{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#banner1 .top10{
+    float:right;
+    width:332px;
+    height:380px;
+    background-color: #f0dec1;
+    text-align: center;
+    overflow: auto;
+}
+#banner1 .top10 table{
+    margin-left: 20px;
+    margin-top:5px;
+    overflow: auto;
+    height: 310px;
+    display: block;
+}
+#banner1 .top10 table th{
+    width:90px;height:26px;color:#7f7f7f;
+}
+#banner1 .top10 table td{
+    width:90px;height:26px;
+    font-family: '微软雅黑';
+}
+.top10Img{
+    margin-top: 15px;
+}
+#banner2{
+    margin-top:10px;margin-bottom: 10px;
+}
+
+#banner3{
+    width:1250px;height:310px;margin-bottom: 5px;
+}
+
+#banner3 .opBoDiv1{
+    margin-left: 10px;position: relative;height: 310px;width:224px;float:left;
+}
+#banner3 .opBoDiv2{
+    margin-left: 5px;position: relative;height: 310px;width:458px;float:right;
+}
+#banner3 .downImg{
+    opacity: 0.9;position: absolute;bottom: 0px;z-index: 2;
+}
+#banner3 .leftImg{
+    position: absolute;z-index: 0;bottom: 40px;
+}
+#banner3 .rightImg{
+    position: absolute;z-index: 0;bottom: 40px;
+    right: 0px;
+}
+
+.contentTop{
+    width:1250px;height:64px;margin-bottom: 5px;background-color: #e5e5e5;text-align: center;line-height: 66px;
+}
+
+.contentTop h1{
+    font-weight:normal;color:#3d3d3d;
+}
+
+.contentMain{
+    width:1250px;height:740px;background:#e5e5e5 url("../images/bk.png") repeat-y 50% 0;
+}
+
+.titleL{
+    width:622px;height: 62px;float:left;
+}
+.titleL span{
+    width:207px;height: 62px;text-align: center;font-size: 20px;font-weight: bold;display: inline-block;color:#3d3d3d;line-height: 62px;
+}
+.titleR{
+    width:622px;height: 62px;float:right;
+}
+.titleR span{
+    width:207px;height: 62px;text-align: center;font-size: 20px;font-weight: bold;display: inline-block;color:#3d3d3d;line-height: 62px;
+}
+.contentMain ul{
+    width:622px;height:740px;
+}
+.contentMain ul li{
+    width:622px;
+}
+.contentMain ul li img{
+    vertical-align: middle;
+}
+.contentMain ul li span{
+    width:207px;height: 36px;text-align: center;line-height: 36px;display: inline-block;
+}
+
+#tips{
+    width:1250px;font-size: 20px;color:black;margin-bottom: 10px;
+}
+
+#content{
+    width:1250px;height:473px;
+    background: #E8E8E8 url("../images/bk1.png") repeat-y scroll 50% 0%;
+}
+
+.table{
+    width:625px;text-align: center;margin-top: 20px;
+}
+.table tr{
+    height: 35px;
+}
+.table th{
+    height: 50px;
+}
+.table tr td{
+    color:#595656;font-size: 18px;
+}
